@@ -289,7 +289,7 @@ public class WeaponFireAspect implements Aspect<WeaponState, PlayerWeaponInstanc
             if (!FMLCommonHandler.instance().getSide().isServer()) {
 
                 //
-                PositionedSoundRecord psr = new PositionedSoundRecord(shootSound, SoundCategory.PLAYERS, silencerOn ? weapon.getSilencedShootSoundVolume() * 0.4f : weapon.getShootSoundVolume() * 0.4f, 1.0F, MC.player.getPosition().up(5));
+                PositionedSoundRecord psr = new PositionedSoundRecord(shootSound, SoundCategory.PLAYERS, silencerOn ? weapon.getSilencedShootSoundVolume() * 0.4f, 1.0F, MC.player.getPosition().up(5));
                 playShootSound(psr);
                 //MC.getSoundHandler().playSound(psr);
             }
